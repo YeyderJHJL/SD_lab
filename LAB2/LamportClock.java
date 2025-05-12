@@ -33,7 +33,7 @@ public class LamportClock {
                 public void run() {
                     int time = clock.tick();
 
-                    System.out.println("Thread " + Thread.currentThread().getId() + " created event with Lamport time " + time);
+                    System.out.println("Thread " + Thread.currentThread().getName() + " created event with Lamport time " + time);
                     
                     try {
                         Thread.sleep((long) (Math.random() * 1000));
@@ -42,10 +42,11 @@ public class LamportClock {
                     }
 
                     int receivedTime = clock.tick();
-                    System.out.println("Thread " + Thread.currentThread().getId() + " received event with Lamport time " + receivedTime);
+                    System.out.println("Thread " + Thread.currentThread().getName() + " received event with Lamport time " + receivedTime);
                     clock.update(receivedTime);
                 }
             });
+            thread.setName("Thread-" + i);
             threads.add(thread);
             thread.start();
         }
