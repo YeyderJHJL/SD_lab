@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
     <!DOCTYPE libro [
-    <!-- Aquí comienza el DTD -->
-    <!ELEMENT libro (portada, cuerpo, contraportada)>
-    <!ELEMENT portada (titulo, edicion, autor, editor)>
-    <!ELEMENT titulo (#PCDATA)>
-    <!ELEMENT edicion (#PCDATA)>
-    <!ELEMENT autor (nombre, apellidos, email?)>
-    <!ELEMENT nombre (#PCDATA)>
-    <!ELEMENT apellidos (#PCDATA)>
-    <!ELEMENT email (#PCDATA)>
-    ...
-    <!-- Aquí termina el DTD -->
+	    <!-- Aquí comienza el DTD -->
+	    <!ELEMENT libro (portada, cuerpo, contraportada)>
+	    <!ELEMENT portada (titulo, edicion, autor, editor)>
+	    <!ELEMENT titulo (#PCDATA)>
+	    <!ELEMENT edicion (#PCDATA)>
+	    <!ELEMENT autor (nombre, apellidos, email?)>
+	    <!ELEMENT nombre (#PCDATA)>
+	    <!ELEMENT apellidos (#PCDATA)>
+	    <!ELEMENT email (#PCDATA)>
+	    <!-- Aquí termina el DTD -->
+    ]>
 <BOE>
   <TITULO>BOLETIN OFICIAL DEL ESTADO</TITULO>
   <FECHA><AAAA>2001</AAAA><MM>03</MM><DD>27</DD></FECHA>
