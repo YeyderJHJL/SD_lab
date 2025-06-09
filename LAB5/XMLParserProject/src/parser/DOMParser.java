@@ -10,7 +10,7 @@ import org.w3c.dom.Document;
 public class DOMParser {
     public static void main(String[] args) {
         try {
-            File xmlFile = new File("data/anexo2.xml");
+            File xmlFile = new File("src/data/Ejer01.xml");
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             factory.setValidating(true);
             factory.setNamespaceAware(false);

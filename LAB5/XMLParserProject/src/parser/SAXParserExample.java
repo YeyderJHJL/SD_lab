@@ -8,7 +8,7 @@ import java.io.*;
 public class SAXParserExample extends DefaultHandler {
     public static void main(String[] args) {
         try {
-            File xmlFile = new File("data/anexo2.xml");
+            File xmlFile = new File("src/data/Ejer01.xml");
             SAXParserFactory factory = SAXParserFactory.newInstance();
             factory.setValidating(true);
 
